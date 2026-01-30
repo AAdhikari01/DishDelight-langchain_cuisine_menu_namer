@@ -1,7 +1,6 @@
 from langchain_core.prompts import PromptTemplate
 from langchain_groq import ChatGroq
 import os
-api_key=os.environ.get['API']
 # Set your API key
 os.environ["GROQ_API_KEY"] = "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"
 
@@ -42,3 +41,4 @@ def generate_restaurant_name_and_items(cuisine):
         "meaning": meaning,
         "menu_items": menu_items
     }
+
